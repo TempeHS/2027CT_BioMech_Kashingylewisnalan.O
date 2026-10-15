@@ -4,7 +4,22 @@ Description
 
 ## Overview
 
-A prosthetic fore-arm and hand that uses an EMG to read natural electrical activity produced by the remainder of Aaron's fore-arm stump.
+A prosthetic fore-arm and hand that uses an EMG to read natural electrical activity produced by the remainder of Aaron's fore-arm stump to contract the fingers of the arm to clamp onto rocks, as per Aaron's request. It a sport's specific prosthetic that that requires Aaron to think about moving his wrist or hand. Electrodes placed on either side of the skin pick up these electrical signatures that come from an oboard computer or micro-controller to translate the frequency and strenght of the electrical wave into a specific mechanical action.
+
+## Statement of Intent
+
+### What is the device?
+The proposed device is a sports-specific climbing prosthetic arm designed to help Aaron return to rock climbing. The main feature is a strong, adjustable climbing attachment that can securely grip and connect with climbing holds. The device will sense the force placed on the prosthetic and respond by providing a stable grip, helping Aaron maintain control while climbing.
+
+### Who is it for?
+The device is designed specifically for Aaron, who has a mid-section trans-radial amputation of his right arm. Aaron enjoys bush walking and rock climbing and particularly wants to regain his ability to climb. The prosthetic therefore needs to be lightweight, durable, comfortable and capable of handling the forces involved in rock climbing.
+
+### Why is it needed?
+The device is needed because Aaron's right forearm was amputated following a traumatic injury that could not be healed and Aaron wants to be active and rock climb again. His medical notes confirm a mid-section trans-radial amputation of the right arm, making climbing and some daily activities difficult. A specialised prosthetic would address his specific need for a device that can withstand the physical demands of rock climbing.
+
+### How will it help?
+The climbing prosthetic will allow Aaron to grip climbing holds more effectively and improve his balance, stability and control while climbing. This will help him safely participate in an activity he enjoys and increase his independence during physical activities and everyday tasks. Most importantly, the device will help Aaron work towards returning to rock climbing and improve his overall quality of life.
+
 
 ## The working rhythm
 
