@@ -1,18 +1,10 @@
-# TempeHS Arduino Bootcamp
+# BIOMEDICAL MECHATRONICS (ARM OF MALENIA)
 
-This is the folder structure and starter files for students completing the TempeHS Arduino Bootcamp.
+Description
 
-The bootcamp uses the **official [Arduino Sensor Kit](https://sensorkit.arduino.cc/)**: a Grove base shield and prewired modules that connect with Grove cables (no breadboard wiring needed for the kit modules). Your kit also includes a **Grove Line Finder** and a **Grove 3-pin Ultrasonic sensor**. The motor activities use real wiring with external power.
+## Overview
 
-## Getting started
-
-1. Click **Use this template** then **Create a new repository**
-2. Name it using the class convention: `2027CT_Arduino_Bootcamp_FirstName.Initial` (e.g. `2027CT_Arduino_Bootcamp_Ben.J`)
-3. Open your repository in a **GitHub Codespace** (the **Arduino to Codespaces Bridge** extension installs automatically)
-4. Plug in your Arduino Uno, click the bridge icon in the left navigation bar, run the server, then open the bridge
-5. Upload a sketch through the bridge and you are ready to code
-
-Full setup instructions are on the learning platform: **Arduino Bootcamp, Page 1: What is Mechatronics?**
+A prosthetic fore-arm and hand that uses an EMG to read natural electrical activity produced by the remainder of Aaron's fore-arm stump.
 
 ## The working rhythm
 
