@@ -20,6 +20,15 @@ The device is needed because Aaron's right forearm was amputated following a tra
 ### How will it help?
 The climbing prosthetic will allow Aaron to grip climbing holds more effectively and improve his balance, stability and control while climbing. This will help him safely participate in an activity he enjoys and increase his independence during physical activities and everyday tasks. Most importantly, the device will help Aaron work towards returning to rock climbing and improve his overall quality of life.
 
+## Patient Profile
+### Aaron
+Hi, my name is Aaron, and I love to bush walk and rock climb. A few years ago, I was hiking in the Utah Mountains in America when I fell through a crevasse, and a large boulder crushed my arm forearm. Long story short, I now don't have a right arm, making climbing and performing daily activities difficult. Mostly I really miss being able to rock climb.
+What I need is a sports-specific prosthetic so I can climb again!
+Summary of Medical notes
+Mid-section trans-radial amputations of the right arm
+Amputations due to trauma beyond repair
+No adherent scar tissue
+Ulnohumeral joint is healthy and articulates normally
 
 ## The working rhythm
 
