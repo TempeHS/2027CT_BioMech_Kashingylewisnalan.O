@@ -10,11 +10,11 @@ void setup() {
 
 void loop() {
 if (digitalRead(BUTTON_PIN) == HIGH) {
-  Serial.println("kashing");
+  Serial.println("CLAMP");
   delay(250);
 }
 if (digitalRead(BUTTON_PIN2) == HIGH) {
-  Serial.println("LEWIS");
+  Serial.println("UNCLAMP");
   delay(250);
 }
 }
