@@ -23,8 +23,8 @@ void smoothMove(int fromAngle, int toAngle) {
 }
 
 void setup() {
-  pinMode(BUTTON_PIN, INPUT);
-  pinMode(BUTTON_PIN2, INPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(BUTTON_PIN2, INPUT_PULLUP);
 
   myServo.attach(SERVO_PIN);
   myServo.write(currentAngle);
