@@ -31,7 +31,7 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN) == HIGH) {
+  if (digitalRead(BUTTON_PIN) == LOW) {
     int targetAngle = currentAngle + 90;
     if (targetAngle > 180) targetAngle = 180;
 
@@ -39,7 +39,7 @@ void loop() {
     currentAngle = targetAngle;
     delay(200);
   }
-  if (digitalRead(BUTTON_PIN2) == HIGH) {
+  if (digitalRead(BUTTON_PIN2) == LOW) {
     int targetAngle = currentAngle - 90;
     if (targetAngle < 0) targetAngle = 0;
 
