@@ -28,20 +28,28 @@ void setup() {
 
   myServo.attach(SERVO_PIN);
   myServo.write(currentAngle);
+
+  Serial.begin(115200);
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN) == LOW) {
+  if (digitalRead(BUTTON_PIN) == HIGH) {
+    Serial.println("buttonPressed");
     int targetAngle = currentAngle + 90;
-    if (targetAngle > 180) targetAngle = 180;
+    if (targetAngle > 180) {
+      targetAngle = 180;
+    }
 
     smoothMove(currentAngle, targetAngle);
     currentAngle = targetAngle;
     delay(200);
   }
-  if (digitalRead(BUTTON_PIN2) == LOW) {
+  if (digitalRead(BUTTON_PIN2) == HIGH) {
     int targetAngle = currentAngle - 90;
-    if (targetAngle < 0) targetAngle = 0;
+    if (targetAngle < 0)
+    {
+      targetAngle = 0;
+    }
 
     smoothMove(currentAngle, targetAngle);
     currentAngle = targetAngle;
