@@ -1,5 +1,6 @@
 const int BUTTON_PIN =4;
 const int BUTTON_PIN2 =3;
+int currentAngle = 90;
 
 void setup() {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -7,14 +8,19 @@ void setup() {
   Serial.begin(115200);
 }
 
-
 void loop() {
-if (digitalRead(BUTTON_PIN) == LOW) {
-  Serial.println("CLAMP");
-  delay(250);
-}
-if (digitalRead(BUTTON_PIN2) == LOW) {
-  Serial.println("UNCLAMP");
-  delay(250);
-}
+  if (digitalRead(BUTTON_PIN) == HIGH) {
+    Serial.println("buttonPressed");
+    int targetAngle = currentAngle + 90;
+    if (targetAngle > 180) {
+      targetAngle = 180;
+    }
+  }
+  if (digitalRead(BUTTON_PIN2) == HIGH) {
+    int targetAngle = currentAngle - 90;
+    if (targetAngle < 0)
+    {
+      targetAngle = 0;
+    }
+  }
 }
