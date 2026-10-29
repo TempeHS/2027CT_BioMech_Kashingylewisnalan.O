@@ -17,10 +17,10 @@ void loop() {
     }
   }
   if (digitalRead(BUTTON_PIN2) == HIGH) {
-    int targetAngle = currentAngle - 90;
-    if (targetAngle < 0)
-    {
-      targetAngle = 0;
+    Serial.println("buttonPressed");
+    int targetAngle = currentAngle + 90;
+    if (targetAngle > 180) {
+      targetAngle = 180;
     }
   }
 }
