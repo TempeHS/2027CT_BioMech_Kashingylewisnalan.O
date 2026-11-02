@@ -12,6 +12,7 @@ const unsigned long MOVE_INTERVAL = 20;
 
 void setupServo() {
   gripServo.attach(SERVO_PIN);
+  servoPosition = 90;
   gripServo.write(servoPosition);
 }
 
