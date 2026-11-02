@@ -2,17 +2,16 @@
 
 const int SERVO_PIN = 2;
 const int OPEN_LIMIT = 0;
-const int CLOSED_LIMIT = 90;
+const int CLOSED_LIMIT = 180;
 
 Servo gripServo;
-int servoPosition = 45;
+int servoPosition = 90;
 
 unsigned long lastMoveTime = 0;
 const unsigned long MOVE_INTERVAL = 20;
 
 void setupServo() {
   gripServo.attach(SERVO_PIN);
-  servoPosition = 90;
   gripServo.write(servoPosition);
 }
 
