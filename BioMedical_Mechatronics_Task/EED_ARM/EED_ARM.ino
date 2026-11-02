@@ -5,10 +5,13 @@ void setup() {
 }
 
 void loop() {
-  if (isOpenButtonHeld()) {
+  bool opening = isOpenButtonHeld();
+  bool closing = isCloseButtonHeld();
+
+  if (opening && !closing) {
     moveServoOpen();
   }
-  else if (isCloseButtonHeld()) {
+  else if (closing && !opening) {
     moveServoClosed();
   }
 }
