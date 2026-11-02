@@ -1,19 +1,36 @@
 #include <Servo.h>
 
-Servo gripServo;
+const int SERVO_PIN = 2;
+const int OPEN_LIMIT = 0;
+const int CLOSED_LIMIT = 90;
 
-void setup() {
-  Serial.begin(115200);
-  gripServo.attach(2);
-  Serial.println("Servo test started");
+Servo gripServo;
+int servoPosition = 45;
+
+unsigned long lastMoveTime = 0;
+const unsigned long MOVE_INTERVAL = 20;
+
+void setupServo() {
+  gripServo.attach(SERVO_PIN);
+  gripServo.write(servoPosition);
 }
 
-void loop() {
-  gripServo.write(0);
-  Serial.println("Moving to 0 degrees");
-  delay(1000);
+void moveServoOpen() {
+  if (millis() - lastMoveTime >= MOVE_INTERVAL) {
+    if (servoPosition > OPEN_LIMIT) {
+      servoPosition--;
+      gripServo.write(servoPosition);
+    }
+    lastMoveTime = millis();
+  }
+}
 
-  gripServo.write(90);
-  Serial.println("Moving to 90 degrees");
-  delay(1000);
+void moveServoClosed() {
+  if (millis() - lastMoveTime >= MOVE_INTERVAL) {
+    if (servoPosition < CLOSED_LIMIT) {
+      servoPosition++;
+      gripServo.write(servoPosition);
+    }
+    lastMoveTime = millis();
+  }
 }
