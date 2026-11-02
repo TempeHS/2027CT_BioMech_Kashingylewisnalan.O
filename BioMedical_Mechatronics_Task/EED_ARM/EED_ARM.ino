@@ -8,8 +8,7 @@ void loop() {
   if (isOpenButtonHeld()) {
     moveServoOpen();
   }
-
-  if (isCloseButtonHeld()) {
+  else if (isCloseButtonHeld()) {
     moveServoClosed();
   }
 }
